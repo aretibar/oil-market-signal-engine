@@ -61,3 +61,13 @@ def get_signal():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+@app.route("/latest-price")
+def latest_price():
+    df = load_data()
+    latest = df.iloc[-1]
+
+    return jsonify({
+        "date": str(latest["Date"].date()),
+        "price": float(latest["Price"])
+    })
