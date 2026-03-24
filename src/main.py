@@ -7,9 +7,9 @@ pd.set_option("display.width", 200)
 pd.set_option("display.max_colwidth", None)
 
 # Load data
-inventory = pd.read_csv("data/inventory.csv", skiprows=4)
-production = pd.read_csv("data/production.csv", skiprows=4)
-prices = pd.read_csv("data/oil_prices.csv", skiprows=4)
+inventory = pd.read_csv("../data/inventory.csv", skiprows=4)
+production = pd.read_csv("../data/production.csv", skiprows=4)
+prices = pd.read_csv("../data/oil_prices.csv", skiprows=4)
 
 # Clean column names
 inventory.columns = ["Date", "Inventory"]
