@@ -29,6 +29,19 @@ It processes multiple data sources and generates simple market signals.
 
 ---
 
+## Live API
+https://oil-market-signal-engine.onrender.com
+
+--- 
+
+### Endpoints
+- `/`
+- `/data`
+- `/latest-price`
+- `/signal`
+
+---
+
 ## 🛠️ Tech Stack
 
 - Python
